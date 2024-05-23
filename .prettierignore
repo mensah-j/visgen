@@ -1,0 +1,9 @@
+.eslintignore
+.gitattributes
+.gitignore
+.husky
+.prettierignore
+*.gz
+*.zip
+package-lock.json
+tsconfig.json

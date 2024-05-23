@@ -1,0 +1,34 @@
+{
+  "name": "@visgen/hitomezashi",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "generate hitomezashi stitch patterns",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "tsc": "rm -rf dist && tsc",
+    "prepublish": "npm run tsc"
+  },
+  "author": "Jeffery Mensah",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "lint-staged": {
+    "*.{m?[j,t]sx?}": "eslint --fix",
+    "*": "prettier --write"
+  },
+  "gitHead": "631e23448a4662dd9bdc5d40ed60ddc7ed036497",
+  "dependencies": {
+    "two.js": "^0.8.13"
+  }
+}
