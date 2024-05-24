@@ -31,7 +31,7 @@ hitomezashi.render({ element, context: 'svg' });
 
 The size of the rendering context, in pixels.
 
-```ts
+```yaml
 size: {
   width: number;
   height: number;
@@ -42,15 +42,15 @@ size: {
 
 The aligments of each horizontal stitch. Rows $i$ and $j$ share the same alignment if and only if `rows[i]` and `rows[j]` are equivalent $\bmod \,2$.
 
-```ts
+```yaml
 rows: number[]
 ```
 
 ### `columns`
 
-The aligments of each vertical stitch. Columns $i$ and $j$ share the same alignment if and only if `columns[i]` and `columns[j]` are equivalent $\bmod \,2$.
+The aligments of each vertical stitch. Columns $i$ and $j$ share the same alignment if and only if `columns[i]` and `columns[j]` are equivalent $\bmod$ $2$.
 
-```ts
+```yaml
 columns: number[]
 ```
 
@@ -58,6 +58,6 @@ columns: number[]
 
 The visual style of the stitch pattern.
 
-```ts
+```yaml
 style: HitomezashiOutline | HitomezashiSolid;
 ```
