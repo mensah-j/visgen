@@ -1,6 +1,6 @@
 {
   "name": "@visgen/hitomezashi",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "generate hitomezashi stitch patterns",
   "main": "./dist/index.js",
